@@ -1,0 +1,67 @@
+﻿<Window x:Class="HoursCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HoursCalculator"
+        mc:Ignorable="d"
+        Title="Weekly Hours Calculator" Height="835" Width="1080"
+        ResizeMode="NoResize"
+        Icon="./Images/icon.jpg">
+    <Grid Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="72"/>
+            <ColumnDefinition Width="761"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Monday:" HorizontalAlignment="Left" Margin="122,111,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Grid.Column="1"/>
+        <Label Content="Tuesday:" HorizontalAlignment="Left" Margin="122,142,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Grid.Column="1"/>
+        <Label Content="Wednesday:" HorizontalAlignment="Left" Margin="99,173,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Grid.Column="1"/>
+        <Label Content="Thursday:" HorizontalAlignment="Left" Margin="117,204,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Grid.Column="1"/>
+        <Label Content="Friday:" HorizontalAlignment="Left" Margin="133,235,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Grid.Column="1"/>
+        <!-- Monday -->
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="196,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="txt1" Text="8.0" FontSize="14" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="333,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="txtStart1" FontSize="14" Grid.Column="1" TextChanged="txtStart1_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="472,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="txtFinish1" FontSize="14" Grid.Column="1" TextChanged="txtFinish1_TextChanged"/>
+
+        <!-- Tuesday -->
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="196,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="txt2" Text="8.0" FontSize="14" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="333,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="txtStart2" FontSize="14" Grid.Column="1" TextChanged="txtStart2_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="472,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="txtFinish2" FontSize="14" Grid.Column="1" TextChanged="txtFinish2_TextChanged"/>
+
+        <!-- Wednesday -->
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="196,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="txt3" Text="8.0" FontSize="14" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="333,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="txtStart3" FontSize="14" Grid.Column="1" TextChanged="txtStart3_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="472,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="txtFinish3" FontSize="14" Grid.Column="1" TextChanged="txtFinish3_TextChanged"/>
+
+        <!-- Thursday -->
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="196,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="txt4" Text="8.0" FontSize="14" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="333,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="txtStart4" FontSize="14" Grid.Column="1" TextChanged="txtStart4_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="472,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="txtFinish4" FontSize="14" Grid.Column="1" TextChanged="txtFinish4_TextChanged"/>
+
+        <!-- Friday -->
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="196,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="txt5" Text="8.0" FontSize="14" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="333,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="txtStart5" FontSize="14" Grid.Column="1" TextChanged="txtStart5_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="472,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="txtFinish5" FontSize="14" Grid.Column="1" TextChanged="txtFinish5_TextChanged"/>
+
+        <Label Content="Total Hours:" HorizontalAlignment="Left" Margin="649,111,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Grid.Column="1"/>
+        <Label Content="0 hrs" HorizontalAlignment="Left" Margin="744,111,0,0" VerticalAlignment="Top" Name="lbl1" FontSize="14" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label Content="Remaining Hours:" HorizontalAlignment="Left" Margin="611,142,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Grid.Column="1"/>
+        <Label Content="0 hrs" HorizontalAlignment="Left" Margin="744,142,0,0" VerticalAlignment="Top" Name="lbl2" FontSize="14" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button Content="Calculate" HorizontalAlignment="Left" Margin="618,240,0,0" VerticalAlignment="Top" Width="164" Height="22" Click="Button_Click" FontSize="14" Background="Black" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Image HorizontalAlignment="Right" Height="508" VerticalAlignment="Top" Width="1080" Name="img1" Stretch="UniformToFill" Margin="-6,295,0,0" Grid.ColumnSpan="3"/>
+        <Button Click="Button_Click_1" Margin="163,698,13,62" Background="Transparent" BorderThickness="0" BorderBrush="Transparent" Grid.Column="2" Height="45" Width="55">
+            <ContentControl>
+                <Image HorizontalAlignment="Right" Height="31" Width="51" Name="img2" Stretch="UniformToFill" Source="./Images/refresh.png"/>
+            </ContentControl>
+        </Button>
+        <Image HorizontalAlignment="Right" Height="80" VerticalAlignment="Top" Width="1072" Name="img3" Stretch="UniformToFill" Grid.ColumnSpan="3" Margin="0,-1,2,0"/>
+        <Label Content="Weekly Hours Calculator" HorizontalAlignment="Left" Margin="736,22,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.842,-0.692"
+               FontSize="20" FontWeight="Bold" Grid.ColumnSpan="2" Foreground="LightSlateGray" Grid.Column="1"/>
+        <Label Content="Hours" Grid.Column="1" HorizontalAlignment="Left" Margin="196,79,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Start (AM)" Grid.Column="1" HorizontalAlignment="Left" Margin="333,79,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Finish (PM)" Grid.Column="1" HorizontalAlignment="Left" Margin="472,79,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="618,209,0,0" VerticalAlignment="Top" Width="164" Height="22" Click="Button_Click_2" FontSize="14" Background="Black" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button Content="Reset All" HorizontalAlignment="Left" Margin="618,177,0,0" VerticalAlignment="Top" Width="164" Height="22" Click="Button_Click_3" FontSize="14" Background="Black" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>

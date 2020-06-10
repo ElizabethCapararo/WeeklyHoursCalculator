@@ -1,0 +1,14 @@
+C:\Users\Liz\source\repos\HoursCalculator\HoursCalculator\bin\Release\HoursCalculator.exe.config
+C:\Users\Liz\source\repos\HoursCalculator\HoursCalculator\bin\Release\HoursCalculator.exe
+C:\Users\Liz\source\repos\HoursCalculator\HoursCalculator\bin\Release\HoursCalculator.pdb
+C:\Users\Liz\source\repos\HoursCalculator\HoursCalculator\obj\Release\MainWindow.g.cs
+C:\Users\Liz\source\repos\HoursCalculator\HoursCalculator\obj\Release\App.g.cs
+C:\Users\Liz\source\repos\HoursCalculator\HoursCalculator\obj\Release\HoursCalculator_MarkupCompile.cache
+C:\Users\Liz\source\repos\HoursCalculator\HoursCalculator\obj\Release\HoursCalculator_MarkupCompile.lref
+C:\Users\Liz\source\repos\HoursCalculator\HoursCalculator\obj\Release\MainWindow.baml
+C:\Users\Liz\source\repos\HoursCalculator\HoursCalculator\obj\Release\HoursCalculator.g.resources
+C:\Users\Liz\source\repos\HoursCalculator\HoursCalculator\obj\Release\HoursCalculator.Properties.Resources.resources
+C:\Users\Liz\source\repos\HoursCalculator\HoursCalculator\obj\Release\HoursCalculator.csproj.GenerateResource.cache
+C:\Users\Liz\source\repos\HoursCalculator\HoursCalculator\obj\Release\HoursCalculator.exe
+C:\Users\Liz\source\repos\HoursCalculator\HoursCalculator\obj\Release\HoursCalculator.pdb
+C:\Users\Liz\source\repos\HoursCalculator\HoursCalculator\obj\Release\HoursCalculator.csprojAssemblyReference.cache
